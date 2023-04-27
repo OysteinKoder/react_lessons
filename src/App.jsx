@@ -1,14 +1,15 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vitejs.svg";
 import "./App.css";
 import { Button } from "./components/Button";
 import { HeadLine } from "./components/HeadLine";
 import { Header } from "./components/Header";
 import { Container } from "./components/Container";
 import Paragraph from "./components/paragraph/Paragraph";
+import Card from "./components/card/Card";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <>
       <Header>
@@ -17,10 +18,11 @@ function App() {
         <img src={reactLogo} alt="react logo" />
       </Header>
       <Container>
-        <Button onClick={() => setCount((count) => count + 1)}>
-          Count is: {count}
-        </Button>
-        <Paragraph text="Hey" />
+        <Card
+          title="Built Using Vite"
+          img={viteLogo}
+          text="This project is built using vite"
+        />
       </Container>
     </>
   );
