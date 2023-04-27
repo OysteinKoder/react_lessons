@@ -5,6 +5,7 @@ import { Button } from "./components/Button";
 import { HeadLine } from "./components/HeadLine";
 import { Header } from "./components/Header";
 import { Container } from "./components/Container";
+import Paragraph from "./components/paragraph/Paragraph";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <Button onClick={() => setCount((count) => count + 1)}>
           Count is: {count}
         </Button>
+        <Paragraph text="Hey" />
       </Container>
     </>
   );
