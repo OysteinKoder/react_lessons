@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #47d2fb;
   text-decoration: inherit;
 }
 a:hover {
@@ -28,11 +28,13 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  color: #47d2fb;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #47d2fb;
 }
 
 button {
@@ -70,4 +72,13 @@ button:focus-visible {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  padding: 1rem;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
 }

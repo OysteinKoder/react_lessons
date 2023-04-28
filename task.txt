@@ -1,5 +1,6 @@
 Task
-- Create a functional component that contains multiple child components
-- Use props to pass data from a parent component to a child component
-- Use the component multiple places in app.jsx 
-  and pass different data to it each instance of the component
+- Implement react-router-dom to your portfolio 
+- Remember to use HashRouter instead of BrowserRouter
+- Make three sub pages: About, and Contact
+
+
