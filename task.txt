@@ -1,5 +1,5 @@
-Task: make a counter app
-- Create component that has two buttons and a paragraph
-- Use useState hook to track the state of count in the component
-- Use the buttons to increment and decrement the count.
-- Display the count in the paragraph
+Task: Do an api call to get the data from the server and display it
+- you can use this url : https://catfact.ninja/facts
+- use axios to do the api call (yarn add axios)
+- use useState to store the data from the api call
+- use useEffect to do the api call when the page is rendered
