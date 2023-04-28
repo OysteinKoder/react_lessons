@@ -8,4 +8,8 @@ export const CardContainer = styled.div`
   border: #650897 solid 3px;
   border-radius: 15px;
   padding: 1rem;
+
+  &:hover {
+    border-color: #646cff;
+  }
 `;

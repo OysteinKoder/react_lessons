@@ -1,9 +1,4 @@
 Task
-
-- Create a new file called Button.jsx
-- Import “styled”from styled-components.
-- Create a new styled component called StyledButton.
-- Add styling to StyledButton using CSS. For example, you might set the background color, font size, and padding.
-- Add a hover effect to StyledButton using the &:hover selector. For example, you might change the background color and add a box-shadow.
-- Export the StyledButton component from the file.
-- Use the StyledButton component in your application by importing it and rendering it as a normal React component.
+- Create a functional component that contains multiple child components
+- Use props to pass data from a parent component to a child component
+- Use the component multiple places in app.jsx and pass different data to it each instance of the component
