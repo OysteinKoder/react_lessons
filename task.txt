@@ -1,4 +1,5 @@
-Task
-- Implement react-router-dom to your portfolio 
-- Remember to use HashRouter instead of BrowserRouter
-- Make three sub pages: About, and Contact
+Task: make a counter app
+- Create component that has two buttons and a paragraph
+- Use useState hook to track the state of count in the component
+- Use the buttons to increment and decrement the count.
+- Display the count in the paragraph
