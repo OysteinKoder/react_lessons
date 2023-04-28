@@ -2,5 +2,3 @@ Task
 - Implement react-router-dom to your portfolio 
 - Remember to use HashRouter instead of BrowserRouter
 - Make three sub pages: About, and Contact
-
-

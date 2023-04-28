@@ -7,19 +7,24 @@ import { HeadLine } from "./components/HeadLine";
 import { Header } from "./components/Header";
 import { Routes, Route, Link } from "react-router-dom";
 import { ColumnWrapper, RowWrapper } from "./components/flexDirections";
+import HooksExamplePage from "./pages/HooksExamplePage";
+
+// Inside Routes is all the possible routes that the user can go to
+// You can look at Routes as a box in the webpage that can only show one Route at a time
+// When you click one of the Links in the Header, the Route that is inside the Link will be shown in the Routes box
 function App() {
   return (
     <>
       <Header>
         <ColumnWrapper>
-          <section>
+          <section aria-label="icon and headline">
             <RowWrapper>
               <img src={reactLogo} alt="react logo" />
               <HeadLine>React Lessons</HeadLine>
               <img src={reactLogo} alt="react logo" />
             </RowWrapper>
           </section>
-          <section>
+          <section aria-label="page navigation">
             <nav>
               <ul>
                 <RowWrapper>
@@ -32,6 +37,9 @@ function App() {
                   <li>
                     <Link to="/pant">Pant</Link>
                   </li>
+                  <li>
+                    <Link to="/hooks">Hooks</Link>
+                  </li>
                 </RowWrapper>
               </ul>
             </nav>
@@ -43,6 +51,7 @@ function App() {
         <Route path="/about" element={<AboutMePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/pant" element={<PersonSelectorPage />} />
+        <Route path="/hooks" element={<HooksExamplePage />} />
       </Routes>
     </>
   );

@@ -37,6 +37,10 @@ h1 {
   color: #47d2fb;
 }
 
+h2 {
+  padding-top: 2.5rem;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
