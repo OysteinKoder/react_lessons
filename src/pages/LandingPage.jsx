@@ -13,6 +13,12 @@ import { ColumnWrapper, RowWrapper } from "../components/flexDirections";
 // You can look at Routes as a box in the webpage that can only show one Route at a time
 // When you click one of the Links in the Header, the Route that is inside the Link will be shown in the Routes box
 function LandingPage() {
+  const styles = {
+    position: "fixed",
+    bottom: "0",
+    margin: "auto",
+    width: "100%",
+  };
   return (
     <>
       <Header>
@@ -53,6 +59,15 @@ function LandingPage() {
         <Route path="/pant" element={<PersonSelectorPage />} />
         <Route path="/useContext" element={<UseContextPage />} />
       </Routes>
+      <footer style={styles}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/OysteinKoder/react_lessons"
+        >
+          Github repo
+        </a>
+      </footer>
     </>
   );
 }

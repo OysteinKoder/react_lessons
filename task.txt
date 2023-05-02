@@ -1,4 +1,5 @@
 Task: Publish your portfolio on github pages
+
 - install the gh pages package
     yarn add gh-pages --save-dev
 
@@ -7,7 +8,16 @@ Task: Publish your portfolio on github pages
     "deploy": "gh-pages -d dist",
 
 -In the vite.config.js file add this line before plugins: [react()],
-    base: "/YOUR_REPOSITORY_NAME",
+    base: "/YOUR_REPOSITORY_NAME/",
+
+- Commit and push your changes to the repository
 
 - In terminal type
     yarn deploy
+
+
+    Gotcha: 
+    if you get this error message: Failed to get remote.origin.url (task must either be run in a git repository with a configured origin remote or must be configured with the "repo" option)
+    - copy the url for your repository
+    - write this command in the terminal
+        git remote add origin <paste the url here>
