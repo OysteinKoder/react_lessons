@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { CounterContext } from "./context/counterContext";
+import { useState } from "react";
+import LandingPage from "./pages/LandingPage";
 
+// Inside Routes is all the possible routes that the user can go to
+// You can look at Routes as a box in the webpage that can only show one Route at a time
+// When you click one of the Links in the Header, the Route that is inside the Link will be shown in the Routes box
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(0);
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CounterContext.Provider value={{ count, setCount }}>
+        <LandingPage />
+      </CounterContext.Provider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

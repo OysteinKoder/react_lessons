@@ -1,0 +1,3 @@
+Task: make a counter app, and make the state available through all components/pages using useContext
+- in one of your pages a component should be able to increment and decrement the counter
+- in a different page you will show the count.
