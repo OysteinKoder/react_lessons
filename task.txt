@@ -1,3 +1,13 @@
-Task: make a counter app, and make the state available through all components/pages using useContext
-- in one of your pages a component should be able to increment and decrement the counter
-- in a different page you will show the count.
+Task: Publish your portfolio on github pages
+- install the gh pages package
+    yarn add gh-pages --save-dev
+
+-In the package.json file add these lines before "build": "vite build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+
+-In the vite.config.js file add this line before plugins: [react()],
+    base: "/YOUR_REPOSITORY_NAME",
+
+- In terminal type
+    yarn deploy
