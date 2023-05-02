@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://oysteinkoder.github.io/react_lessons/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
