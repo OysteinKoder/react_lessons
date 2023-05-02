@@ -9,7 +9,7 @@ const CountPage = () => {
 
   return (
     <>
-      <h2>Projects</h2>
+      <h2>Count from CounterContext</h2>
       <p>Count is: {count}</p>
     </>
   );
