@@ -1,5 +1,3 @@
-Task: make a counter app
-- Create component that has two buttons and a paragraph
-- Use useState hook to track the state of count in the component
-- Use the buttons to increment and decrement the count.
-- Display the count in the paragraph
+Task: make a counter app, and make the state available through all components/pages using useContext
+- in one of your pages a component should be able to increment and decrement the counter
+- in a different page you will show the count.
